@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EmpregaEu4</string>
+    <string name="name">Nome</string>
+    <string name="password">Senha</string>
+    <string name="remember">Remember</string>
+    <string name="login">Login</string>
+    <string name="msgError">Usuário incorreto</string>
+    <string name="welcome">Bem Vindo :</string>
+    <string name="textoExemplo">Esse é o seu aplicativo para marcar e desmasrcar consultas e exames em hospitais na cidade do recife.</string>
+    <string name="texto2">O propósito do aplicativo é contribui com a redução do índece de absenteísmo dos pacientes no comparecimento aos exames e consultas.</string>
+    <string name="next">Avançar</string>
+    <string name="texto3">O que você deseja?</string>
+    <string name="scheduleExams">Marcar exames</string>
+    <string name="scheduleAppointment">Marcar consulta</string>
+    <string name="scheduledAppointments">Consultas Marcadas </string>
+    <string name="scheduledExams">Exames Marcados</string>
+</resources>

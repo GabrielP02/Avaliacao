@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EmpregaEu4</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember</string>
+    <string name="login">Login</string>
+    <string name="msgError">User error</string>
+    <string name="welcome">Welcome :</string>
+    <string name="textoExemplo">This is your app to schedule and cancel consultations and exams in hospitals in Recife.</string>
+    <string name="texto2">The purpose of the application is to contribute to the reduction of the absenteeism rate of patients compared to exams and consultations.</string>
+    <string name="next">Next</string>
+    <string name="texto3">What do you want ?</string>
+    <string name="scheduleExams">Schedule exams </string>
+    <string name="scheduleAppointment">Schedule appointment</string>
+    <string name="scheduledAppointments">Scheduled Appointments</string>
+    <string name="scheduledExams">Scheduled exams</string>
+    <string name="TituloCadastro">ADMIN CADASTRO PACIENTES</string>
+    <string name="NomeCadastro">Nome</string>
+    <string name="IdadeCadastro">Idade</string>
+    <string name="SexoCadastro">Sexo (Masculino/Feminino)</string>
+    <string name="BtCadastro">Cadastrar</string>
+    <string name="BtCadastrar">Register Patient</string>
+</resources>

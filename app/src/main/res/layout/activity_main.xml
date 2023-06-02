@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edUsuario"
+        android:layout_width="258dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="258dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/edUsuario"
+        app:layout_constraintStart_toStartOf="@+id/edUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/edUsuario" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/remember"
+        app:layout_constraintStart_toStartOf="@+id/edSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edSenha" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="217dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/edSenha"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/edSenha"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="272dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cruz" />
+</androidx.constraintlayout.widget.ConstraintLayout>
