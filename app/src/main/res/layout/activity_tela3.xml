@@ -78,11 +78,23 @@
         android:id="@+id/button5"
         android:layout_width="273dp"
         android:layout_height="55dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/blue"
         android:text="@string/BtCadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/Btcadastrados"
         app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

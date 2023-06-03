@@ -15,5 +15,10 @@ class Tela3Activity : AppCompatActivity() {
             val intent = Intent(this, CadastroActivity::class.java)
             startActivity(intent)
         }
+        val button7 = findViewById<Button>(R.id.button7)
+        button7.setOnClickListener {
+            val intent = Intent(this, ListaPacientesActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

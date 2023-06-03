@@ -20,4 +20,5 @@
     <string name="SexoCadastro">Sexo (Masculino/Feminino)</string>
     <string name="BtCadastro">Cadastrar</string>
     <string name="BtCadastrar">Register Patient</string>
+    <string name="Btcadastrados">Registered patients</string>
 </resources>

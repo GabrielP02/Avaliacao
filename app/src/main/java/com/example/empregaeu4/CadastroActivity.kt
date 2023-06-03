@@ -1,14 +1,16 @@
 package com.example.empregaeu4
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.empregaeu4.databinding.ActivityCadastroBinding
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 class CadastroActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityCadastroBinding
+    private lateinit var binding: ActivityCadastroBinding
     private lateinit var dbRef: DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,39 +24,44 @@ class CadastroActivity : AppCompatActivity() {
         var btCadatrar = binding.button
 
         dbRef = FirebaseDatabase.getInstance().getReference("Administrador")
-        btCadatrar.setOnClickListener{
+        btCadatrar.setOnClickListener {
             val empNome = edNome.text.toString()
             val empIdade = edIdade.text.toString()
             val empSexo = edSexo.text.toString()
 
-            if(empNome.isEmpty()){
+            if (empNome.isEmpty()) {
                 edNome.error = "Por favor insira o nome"
             }
-            if(empIdade.isEmpty()){
+            if (empIdade.isEmpty()) {
                 edIdade.error = "Por favor insira a Idade"
             }
-            if(empSexo.isEmpty()){
+            if (empSexo.isEmpty()) {
                 edSexo.error = "Por favor insira o Sexo"
             }
 
             val empId = dbRef.push().key!!
 
-            val Administrador = EmpresaModelo(empId, empNome, empIdade, empSexo
+            val Administrador = EmpresaModelo(
+                empId, empNome, empIdade, empSexo
             )
 
             dbRef.child(empId).setValue(Administrador)
-                .addOnCompleteListener{
+                .addOnCompleteListener {
                     Toast.makeText(this, "Cadastro realizado", Toast.LENGTH_SHORT).show()
+
 
                     edNome.text.clear()
                     edIdade.text.clear()
                     edSexo.text.clear()
 
-                }.addOnFailureListener{err ->
+
+                }.addOnFailureListener { err ->
                     Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_SHORT).show()
                 }
-        }
 
 
+
+            }
+
         }
-}
+    }
